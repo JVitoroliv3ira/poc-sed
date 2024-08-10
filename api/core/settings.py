@@ -21,7 +21,8 @@ DJANGO_APPS = [
 ]
 
 MY_APPS = [
-    "apps.tokens"
+    "apps.tokens",
+    "apps.emails",
 ]
 
 INSTALLED_APPS = [] + DJANGO_APPS + MY_APPS

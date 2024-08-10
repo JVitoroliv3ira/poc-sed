@@ -13,3 +13,8 @@ class TokenService:
         token_hash = hashlib.sha256(token_value.encode('utf-8')).hexdigest()
         self.token_repository.create(system=system, hash=token_hash)
         return token_value
+
+    def validate_token(self, token_value: str) -> bool:
+        token_hash = hashlib.sha256(token_value.encode('utf-8')).hexdigest()
+        token = self.token_repository.get_by_hash(token_hash)
+        return token is not None
