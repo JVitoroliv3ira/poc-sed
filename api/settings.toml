@@ -1,0 +1,7 @@
+[default]
+DB_ENGINE = "mssql"
+DB_NAME = "sed"
+DB_USER = "sed"
+DB_PASSWORD = "@myStrongPassword"
+DB_HOST = "localhost"
+DB_PORT = "1433"
