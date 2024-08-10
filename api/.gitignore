@@ -39,9 +39,6 @@ staticfiles/
 local_settings.py
 .env
 
-# Migrations
-**/migrations/**
-
 # pyenv
 .python-version
 
