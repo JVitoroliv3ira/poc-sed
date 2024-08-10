@@ -1,0 +1,118 @@
+# Python
+*.py[cod]
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+*.pyo
+*.pyd
+*.venv
+.pytest_cache/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+
+# Poetry
+poetry.lock
+
+# Django
+*.log
+*.pot
+*.py[cod]
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+local_settings.py
+.env
+
+# Migrations
+**/migrations/**
+
+# pyenv
+.python-version
+
+# Venv
+.env/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Linux
+*~
+.npm
+*.node_repl_history
+.bash_history
+.bash_logout
+.bash_profile
+.bashrc
+.cache
+.directory
+
+# VSCode
+.vscode/
+
+# JetBrains (PyCharm, IntelliJ)
+.idea/
+*.iml
+*.ipr
+*.iws
+__pycache__/
+*.pyc
+.idea/*
+!*.idea/modules.xml
+!*.idea/workspace.xml
+!*.idea/vcs.xml
+!*.idea/**/encodings.xml
+*.iml
+*.ipr
+*.iws
+.idea/**/tasks.xml
+
+# SQLite
+*.sqlite3
+
+# MySQL
+*.sql
+
+# PostgreSQL
+*.pgsql
+
+# Temporary files
+*.swp
+*~
+
+# Logs
+*.log
