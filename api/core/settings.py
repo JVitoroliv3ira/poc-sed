@@ -57,6 +57,13 @@ TEMPLATES = [
     },
 ]
 
+# REST FRAMEWORK
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ],
+}
+
 # WSGI Application
 WSGI_APPLICATION = "core.wsgi.application"
 
