@@ -10,10 +10,10 @@ ENVIRONMENT = "dev"
 EMAIL_TEST_MODE = true
 TEST_EMAIL_RECIPIENT = "9f5aa5ac42-1e02fd@inbox.mailtrap.io"
 
-EMAIL_HOST = "sandbox.smtp.mailtrap.io"
-EMAIL_PORT = 2525
-EMAIL_USE_TLS = true
-EMAIL_HOST_USER = "8e7aabcea5d75f"
-EMAIL_HOST_PASSWORD = "909e6d78b49669"
+EMAIL_HOST = "localhost"
+EMAIL_PORT = 1025
+EMAIL_USE_TLS = false
+EMAIL_HOST_USER = ""
+EMAIL_HOST_PASSWORD = ""
 
 EMAIL_HOST_SENDER = "9f5aa5ac42-1e02fd@inbox.mailtrap.io"
