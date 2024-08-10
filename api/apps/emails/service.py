@@ -16,10 +16,12 @@ class EmailService:
         self.smtp_user = settings.EMAIL_HOST_USER
         self.smtp_password = settings.EMAIL_HOST_PASSWORD
         self.email_sender = settings.EMAIL_HOST_SENDER
+        self.email_use_tls = settings.EMAIL_USE_TLS
 
     def send_emails(self, email_data_list):
         with smtplib.SMTP(self.smtp_host, self.smtp_port) as server:
-            server.starttls()
+            if self.email_use_tls:
+                server.starttls()
             server.login(self.smtp_user, self.smtp_password)
 
             for email_data in email_data_list:
