@@ -18,6 +18,7 @@ DJANGO_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
+    "django_q",
 ]
 
 MY_APPS = [
@@ -64,6 +65,30 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',
     ],
 }
+
+# QCluster
+Q_CLUSTER = {
+    'name': 'DjangoQCluster',
+    'workers': 4,
+    'recycle': 500,
+    'timeout': 60,
+    'ack_failures': True,
+    'retry': 120,
+    'orm': 'default',
+    'sync': False,
+    'catch_up': False,
+    'max_attempts': 1,
+    'redis': {
+        'host': 'localhost',
+        'port': 6379,
+        'db': 0,
+        'password': None,
+        'socket_timeout': None,
+        'charset': 'utf-8',
+        'errors': 'strict',
+    }
+}
+
 
 # WSGI Application
 WSGI_APPLICATION = "core.wsgi.application"
