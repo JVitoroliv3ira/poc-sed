@@ -1,4 +1,5 @@
 from pathlib import Path
+
 from dynaconf import settings as dynaconf_settings
 
 # Paths
@@ -24,6 +25,7 @@ DJANGO_APPS = [
 MY_APPS = [
     "apps.tokens",
     "apps.emails",
+    "apps.tasks",
 ]
 
 INSTALLED_APPS = [] + DJANGO_APPS + MY_APPS
@@ -88,7 +90,6 @@ Q_CLUSTER = {
         'errors': 'strict',
     }
 }
-
 
 # WSGI Application
 WSGI_APPLICATION = "core.wsgi.application"
